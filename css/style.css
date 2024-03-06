@@ -43,6 +43,10 @@ main,
     color: var(--theme-orange);
 }
 
+.nav-collapse {
+    display: none;
+}
+
 nav {
     display: flex;
     gap: 25px;
@@ -560,6 +564,10 @@ footer {
         display: none;
     }
 
+    .nav-collapse {
+        display: inline-flex;
+    }
+
     .banner-section .title {
         font-size: 22px;
     }
@@ -659,8 +667,24 @@ footer {
         margin-bottom: 24px;
     }
 
+    .newsletter-left {
+        padding: 12px;
+    }
+
     .newsletter-right {
         height: 350px;
+    }
+
+    .newsletter-right div {
+        padding: 20px 30px;
+    }
+
+    .newsletter-right h4 {
+        font-size: 20px;
+    }
+
+    .newsletter-right h3 {
+        font-size: 24px;
     }
 
     .footer-container {
@@ -672,9 +696,149 @@ footer {
     }
 }
 
-@media only screen and(min-width:768px) and (max-width:1400px) {
+@media only screen and (min-width:768px) and (max-width:1400px) {
+
+    header,
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .logo-area .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 32px;
         gap: 10px;
+    }
+
+    .logo-area .logo img {
+        height: 32px;
+        width: auto;
+    }
+
+    nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    nav .link {
+        font-size: 18px;
+    }
+
+    .banner-section .title {
+        font-size: 48px;
+    }
+
+    .banner-section .content {
+        top: 70px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .find-travel-area {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .find-travel {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .find-travel select,
+    .find-travel input,
+    .find-travel button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .popular-tour-section {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        gap: 25px;
+    }
+
+    .content-title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .popular-left ul,
+    .perfect-left ul {
+        padding-left: 18px;
+        width: 90%;
+    }
+
+    .content-details,
+    .card-details,
+    .popular-left ul li,
+    .perfect-left ul li {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .button-primary {
+        font-size: 16px;
+    }
+
+    .why-chooseUs-section {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .choose-destination {
+        gap: 16px;
+    }
+
+    .destination h3 {
+        font-size: 22px;
+    }
+
+    .why-choose-us {
+        gap: 16px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+
+    .container .card {
+        padding: 40px;
+        right: 56px;
+        top: 120px;
+        bottom: 56px;
+    }
+
+    .perfect-place-section {
+        margin-top: 60px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .perfect-right {
+        width: 80%;
+    }
+
+    .perfect-right img {
+        width: 100%;
+    }
+
+    .newsletter-section {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .newsletter-right div {
+        padding: 30px 40px;
+    }
+
+    .footer-container {
+        padding: 80px 0;
+    }
+
+    .footer-container hr {
+        margin: 35px auto;
     }
 }
